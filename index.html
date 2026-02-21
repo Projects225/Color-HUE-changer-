@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEX & Matrix Shifter Pro</title>
+    <title>Color HUE Changer</title>
     <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><linearGradient id="a" x1="16.758" x2="30.883" y1="3.118" y2="17.242" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23f44f5a"/><stop offset=".443" stop-color="%23ee3d4a"/><stop offset="1" stop-color="%23e52030"/></linearGradient><path fill="url(%23a)" d="M24,4l-1,1v19h2.414L38.14,11.274V9.86C34.52,6.24,29.52,4,24,4z"/><linearGradient id="b" x1="161.843" x2="195.542" y1="220.535" y2="254.235" gradientTransform="rotate(45.001 364.001 -44.004)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23fed100"/><stop offset="1" stop-color="%23e36001"/></linearGradient><path fill="url(%23b)" d="M38.142,9.858L24,24l1,1l17.997,0l1-1C43.997,18.881,42.045,13.761,38.142,9.858z"/><linearGradient id="c" x1="429.07" x2="439.777" y1="278.93" y2="289.637" gradientTransform="rotate(90 364 -44)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23ffd747"/><stop offset=".482" stop-color="%23ffd645"/><stop offset="1" stop-color="%23f5bc00"/></linearGradient><path fill="url(%23c)" d="M44,24H24v1.414L36.726,38.14h1.414C41.76,34.52,44,29.52,44,24z"/><linearGradient id="d" x1="649.57" x2="660.277" y1="131.263" y2="141.97" gradientTransform="rotate(134.999 364.002 -44)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%2333c481"/><stop offset="1" stop-color="%2321a366"/></linearGradient><path fill="url(%23d)" d="M38.142,38.142L24,24l-1,1l0,17.997l1,1C29.119,43.997,34.239,42.045,38.142,38.142z"/><linearGradient id="e" x1="701.07" x2="711.777" y1="-129.07" y2="-118.363" gradientTransform="rotate(180 364 -44)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%2328afea"/><stop offset="1" stop-color="%230b88da"/></linearGradient><path fill="url(%23e)" d="M24,44V24h-1.414L9.86,36.726v1.414C13.48,41.76,18.48,44,24,44z"/><linearGradient id="f" x1="551.871" x2="562.578" y1="-351.102" y2="-340.394" gradientTransform="rotate(-134.999 364.002 -44)" gradientUnits="userSpaceOnUse"><stop offset=".002" stop-color="%23427fdb"/><stop offset=".397" stop-color="%232668cb"/><stop offset=".763" stop-color="%231358bf"/><stop offset="1" stop-color="%230c52bb"/></linearGradient><path fill="url(%23f)" d="M9.858,38.142L24,24l-1-1L5.003,23l-1,1C4.003,29.119,5.955,34.239,9.858,38.142z"/><linearGradient id="g" x1="293.07" x2="303.777" y1="-401.07" y2="-390.363" gradientTransform="rotate(-90 364 -44)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23a235d4"/><stop offset=".441" stop-color="%23a033d1"/><stop offset=".702" stop-color="%23982cc9"/><stop offset=".915" stop-color="%238b21bb"/><stop offset="1" stop-color="%23831bb3"/></linearGradient><path fill="url(%23g)" d="M4,24h20v-1.414L11.274,9.86H9.86C6.24,13.48,4,18.48,4,24z"/><linearGradient id="h" x1="72.57" x2="99.915" y1="-253.403" y2="-226.058" gradientTransform="rotate(-45.001 364.002 -43.996)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23e83c67"/><stop offset=".423" stop-color="%23c5214a"/><stop offset=".773" stop-color="%23b01038"/><stop offset="1" stop-color="%23a80a31"/></linearGradient><path fill="url(%23h)" d="M9.858,9.858L24,24V4.003C18.881,4.003,13.761,5.955,9.858,9.858z"/><linearGradient id="i" x1="22.263" x2="25.737" y1="-304.15" y2="-323.85" gradientTransform="matrix(1 0 0 -1 0 -290)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="%23fafafb"/><stop offset=".293" stop-color="%23f6f7f8"/><stop offset=".566" stop-color="%23ebecee"/><stop offset=".832" stop-color="%23d8dcdf"/><stop offset="1" stop-color="%23c8cdd1"/></linearGradient><path fill="url(%23i)" d="M34,24c0,5.522-4.478,10-10,10s-10-4.478-10-10s4.478-10,10-10S34,18.478,34,24z"/></svg>'>
     
     <style>
@@ -49,14 +49,14 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
-            padding: 20px 10px;
+            padding: 40px 15px;
             transition: background-color 0.3s, color 0.3s;
             box-sizing: border-box;
         }
 
         .container {
             background: var(--container-bg);
-            padding: 2rem;
+            padding: 2.5rem 2rem;
             border-radius: 24px;
             box-shadow: var(--shadow);
             width: 100%;
@@ -64,9 +64,10 @@
             position: relative;
             transition: all 0.3s ease;
             box-sizing: border-box;
+            text-align: center;
         }
 
-        /* --- THEME TOGGLE (ABSOLUTE TO CONTAINER) --- */
+        /* --- THEME TOGGLE --- */
         .theme-toggle {
             position: absolute;
             top: 15px;
@@ -81,22 +82,37 @@
             align-items: center;
             justify-content: center;
             color: var(--text-label);
-            transition: all 0.2s;
             z-index: 10;
         }
-        .theme-toggle:hover { border-color: #3498db; }
 
         .sun-icon { display: none; }
         [data-theme="dark"] .moon-icon { display: none; }
         [data-theme="dark"] .sun-icon { display: block; }
 
+        /* --- HEADER --- */
         .header-logo {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto 20px auto;
-            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 10px auto;
         }
 
+        .main-title {
+            margin: 0 0 25px 0;
+            font-size: 1.8rem;
+            font-weight: 850;
+            line-height: 1.2;
+            color: var(--text-main);
+        }
+
+        .rainbow-text {
+            background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        /* --- UI COMPONENTS --- */
         .preview-container {
             width: 100%;
             height: 80px;
@@ -120,7 +136,7 @@
             text-transform: uppercase;
         }
 
-        .input-group { margin-bottom: 1rem; }
+        .input-group { margin-bottom: 1.2rem; text-align: left; }
         label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.8rem; color: var(--text-label); }
         
         input[type="text"] {
@@ -135,38 +151,24 @@
             font-size: 0.95rem;
             box-sizing: border-box;
             outline: none;
-            transition: border-color 0.2s;
         }
         input[type="text"]:focus { border-color: #3498db; }
-        
-        .matrix-input { font-size: 0.75rem !important; }
 
-        input[type="range"] { 
-            width: 100%; 
-            cursor: pointer; 
-            margin: 10px 0;
-            accent-color: #3498db;
-        }
+        input[type="range"] { width: 100%; cursor: pointer; accent-color: #3498db; }
 
         .section-title {
             font-size: 0.65rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--section-title);
-            margin: 1.2rem 0 0.6rem;
+            margin: 1.5rem 0 0.8rem;
             border-bottom: 1px solid var(--input-border);
             padding-bottom: 4px;
+            text-align: left;
         }
 
         .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
-        .color-dot {
-            height: 28px;
-            border-radius: 6px;
-            border: 1px solid rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: transform 0.1s;
-        }
-        .color-dot:active { transform: scale(0.9); }
+        .color-dot { height: 28px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.1); cursor: pointer; }
 
         .custom-preset-row {
             display: flex;
@@ -179,38 +181,21 @@
         }
 
         .picker-wrapper { width: 45px; height: 38px; position: relative; flex-shrink: 0; }
-        #customPresetBtn {
-            width: 100%; height: 100%; border-radius: 6px;
-            border: 1px solid rgba(0,0,0,0.2); cursor: pointer;
-        }
+        #customPresetBtn { width: 100%; height: 100%; border-radius: 6px; border: 1px solid rgba(0,0,0,0.2); cursor: pointer; }
         #hiddenColorPicker { position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none; }
 
         .result-area {
             background: var(--result-bg);
             padding: 15px;
             border-radius: 12px;
-            text-align: center;
             margin-top: 1.5rem;
             border: 1px solid var(--input-border);
         }
 
-        .hex-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
+        .hex-wrapper { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 10px; }
         .hex-display { font-size: 1.5rem; font-weight: 800; color: var(--text-main); font-family: monospace; }
         
-        .matrix-container {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-
         .matrix-display {
-            flex: 1;
             font-family: 'Consolas', monospace;
             font-size: 0.65rem;
             color: var(--text-label);
@@ -221,7 +206,10 @@
             word-break: break-all;
             text-align: left;
             line-height: 1.4;
+            flex: 1;
         }
+
+        .matrix-container { display: flex; gap: 8px; align-items: center; }
 
         .copy-icon-btn {
             width: 36px; height: 36px; padding: 8px;
@@ -232,19 +220,12 @@
             color: var(--btn-copy-color);
             flex-shrink: 0;
             display: flex; align-items: center; justify-content: center;
-            transition: all 0.2s;
         }
-        .copy-icon-btn.success {
-            background-color: var(--success-green) !important;
-            color: white !important;
-            border-color: var(--success-green) !important;
-        }
+        .copy-icon-btn.success { background-color: var(--success-green) !important; color: white !important; border-color: var(--success-green) !important; }
 
         @media (max-width: 480px) {
-            .container { padding: 1.2rem; }
-            .hex-display { font-size: 1.3rem; }
-            .grid { gap: 4px; }
-            .color-dot { height: 25px; }
+            .container { padding: 1.5rem 1.2rem; }
+            .main-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -279,6 +260,8 @@
         </svg>
     </div>
 
+    <h1 class="main-title"><span class="rainbow-text">Color HUE</span><br>Changer</h1>
+
     <div class="preview-container">
         <div id="originalPreview" class="preview-half">Main</div>
         <div id="newPreview" class="preview-half">Result</div>
@@ -291,7 +274,7 @@
 
     <div class="input-group">
         <label>Paste Matrix:</label>
-        <input type="text" id="matrixInput" class="matrix-input" placeholder="0 0 0 0 1 0 0 0 0 0.5 ...">
+        <input type="text" id="matrixInput" class="matrix-input" placeholder="0 0 0 0 1 ...">
     </div>
 
     <div class="input-group">
@@ -304,7 +287,7 @@
 
     <div class="section-title">Custom preset</div>
     <div class="custom-preset-row">
-        <input type="text" id="customPresetHex" placeholder="#CUSTOM" maxlength="7" style="flex: 2; padding: 10px; border:none; background:transparent; color:inherit; outline:none;">
+        <input type="text" id="customPresetHex" placeholder="#CUSTOM" maxlength="7" style="flex: 2; border:none; background:transparent; color:inherit; outline:none; font-family:monospace;">
         <div class="picker-wrapper">
             <div id="customPresetBtn"></div>
             <input type="color" id="hiddenColorPicker" value="#cccccc">
@@ -347,18 +330,13 @@
 
     function toggleTheme() {
         const body = document.body;
-        const current = body.getAttribute('data-theme');
-        const next = current === 'light' ? 'dark' : 'light';
+        const next = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
         body.setAttribute('data-theme', next);
         localStorage.setItem('shifter-theme', next);
     }
 
-    const savedTheme = localStorage.getItem('shifter-theme');
-    if (savedTheme) {
-        document.body.setAttribute('data-theme', savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.setAttribute('data-theme', 'dark');
-    }
+    const savedTheme = localStorage.getItem('shifter-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.body.setAttribute('data-theme', savedTheme);
 
     function hslToHex(h, s, l) {
         l /= 100;
@@ -427,10 +405,6 @@
             currentS = hsl.s; currentL = hsl.l;
             originalPreview.style.backgroundColor = val;
             updateColor();
-        } else {
-            originalPreview.style.backgroundColor = 'transparent';
-            newPreview.style.backgroundColor = 'transparent';
-            hexOutput.innerText = '#------';
         }
     }
 
